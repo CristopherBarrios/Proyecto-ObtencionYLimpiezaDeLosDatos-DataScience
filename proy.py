@@ -36,3 +36,4 @@ PaisGuatemala = PaisGuatemala[1:]
 PaisGuatemala.columns = titulos
 PaisGuatemala.rename(columns=PaisGuatemala.iloc[0])
 print(PaisGuatemala)
+print(list(PaisGuatemala.keys()))
