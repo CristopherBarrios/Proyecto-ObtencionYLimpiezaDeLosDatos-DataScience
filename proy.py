@@ -35,4 +35,4 @@ titulos = PaisGuatemala.iloc[0]
 PaisGuatemala = PaisGuatemala[1:]
 PaisGuatemala.columns = titulos
 PaisGuatemala.rename(columns=PaisGuatemala.iloc[0])
-print(PaisGuatemala.head())
+print(PaisGuatemala)

@@ -1,0 +1,46 @@
+```{r}
+# Cargamos las librerías necesarias
+library(dplyr)
+
+# Cargamos los archivos CSV
+AltaVerapaz <- read.csv('data/csv/AltaVerapaz.csv', encoding='latin1')
+BajaVerapaz <- read.csv('data/csv/BajaVerapaz.csv', encoding='latin1')
+Chimaltenango <- read.csv('data/csv/Chimaltenango.csv', encoding='latin1')
+Chiquimula <- read.csv('data/csv/Chiquimula.csv', encoding='latin1')
+CiudadCapital <- read.csv('data/csv/CiudadCapital.csv', encoding='latin1')
+ElProgreso <- read.csv('data/csv/ElProgreso.csv', encoding='latin1')
+Escuintla <- read.csv('data/csv/Escuintla.csv', encoding='latin1')
+Guatemala <- read.csv('data/csv/Guatemala.csv', encoding='latin1')
+Huehuetenango <- read.csv('data/csv/Huehuetenango.csv', encoding='latin1')
+Izabal <- read.csv('data/csv/Izabal.csv', encoding='latin1')
+Jalapa <- read.csv('data/csv/Jalapa.csv', encoding='latin1')
+Jutiapa <- read.csv('data/csv/Jutiapa.csv', encoding='latin1')
+Peten <- read.csv('data/csv/Peten.csv', encoding='latin1')
+Quetzaltenango <- read.csv('data/csv/Quetzaltenango.csv', encoding='latin1')
+Quiche <- read.csv('data/csv/Quiche.csv', encoding='latin1')
+Retalhuleu <- read.csv('data/csv/Retalhuleu.csv', encoding='latin1')
+Sacatepequez <- read.csv('data/csv/Sacatepequez.csv', encoding='latin1')
+SanMarcos <- read.csv('data/csv/SanMarcos.csv', encoding='latin1')
+SantaRosa <- read.csv('data/csv/SantaRosa.csv', encoding='latin1')
+Solola <- read.csv('data/csv/Solola.csv', encoding='latin1')
+Suchitepequez <- read.csv('data/csv/Suchitepequez.csv', encoding='latin1')
+Totonicapan <- read.csv('data/csv/Totonicapan.csv', encoding='latin1')
+Zacapa <- read.csv('data/csv/Zacapa.csv', encoding='latin1')
+
+# Unimos los datasets
+departamentos <- list(AltaVerapaz, BajaVerapaz, Chimaltenango, Chiquimula, CiudadCapital, ElProgreso, Escuintla, Guatemala, Huehuetenango, Izabal,
+                      Jalapa, Jutiapa, Peten, Quetzaltenango, Quiche, Retalhuleu, Sacatepequez, SanMarcos, SantaRosa, Solola, 
+                      Suchitepequez, Totonicapan, Zacapa)
+
+PaisGuatemala <- do.call(rbind, departamentos)
+
+# Obtenemos los nombres de las columnas
+titulos <- PaisGuatemala[1, ]
+PaisGuatemala <- PaisGuatemala[-1, ]
+colnames(PaisGuatemala) <- titulos
+
+# Mostramos el resultado
+print(PaisGuatemala)
+
+```
+
