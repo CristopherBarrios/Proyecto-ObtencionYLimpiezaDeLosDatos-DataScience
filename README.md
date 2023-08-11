@@ -9,8 +9,8 @@ Creado por:
 
 [Instrucciones](./Proyecto1.pdf)
 
-[PDF - Informe](./.pdf)
+[PDF - Informe](./libro.pdf)
 
-[HTML - Informe](./.html)
+[.ipynb - Codigo](./proy.ipynb)
 
-[RMD - Codigo](./.Rmd)
+[DATA - Limpia](./output/PaisGuatemala.csv)
