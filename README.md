@@ -10,7 +10,7 @@ Creado por:
 
 [Instrucciones](./Proyecto1.pdf)
 
-[PDF - Informe](./libro.pdf)
+[PDF - Informe](./Proyecto-informe.pdf)
 
 [.ipynb - Codigo](./proy.ipynb)
 
