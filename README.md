@@ -4,7 +4,9 @@
 Creado por:
 
 - Cristopher Jose Rodolfo Barrios Solis
-- Diego Andre Castellanos Castro 
+- Diego Andre Castellanos Castro
+- Osmin Josué Sagastume Orellana
+- Nikolas Dimitrio Badani Gasdaglis
 
 
 
